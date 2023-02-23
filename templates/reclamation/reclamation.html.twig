@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>romofyi</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+<body class="main-layout footer_to90 contact_page">
+<!-- loader  -->
+<div class="loader_bg">
+    <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+</div>
+<!-- end loader -->
+<!-- header -->
+<header>
+    <!-- header inner -->
+    <div class="header">
+        <div class="header_top d_none1">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarsExample04">
+
+
+                                <li class="nav-item " href="products.html"> <a class="nav-link">particulier</a></li>
+                                <li class="nav-item " href="products.html"> <a class="nav-link">entreprise</a></li>
+                                <li class="nav-item " href="products.html"> <a class="nav-link">Eshop</i>
+                                    </a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+
+                            </div>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+    <div class="header_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
+                    <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                            <ul class="navbar-nav mr-auto">
+                                <div class="col-md-4">
+
+
+                                    <li class="nav-item ">
+                                        <a class="nav-item " href="#"><img src="images/logo.png" width="150" height="80" alt="#"/></a>
+                                    </li>
+
+                                </div>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="index.html">MOBILE</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">FIXE</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="products.html">INTERNET</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="fashion.html">ASSISTANCE</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="news.html">ACTUALITE</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ path('reclamer') }}">RECLAMATION</a>
+                                </li>
+
+                        </div>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </nav>
+
+    </div>
+    </div>
+    </div>
+</header><!-- end header inner -->
+<!-- end header -->
+<!-- banner -->
+<div class="blue_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="titlepage">
+                    <h2>Réclamation </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- contact section -->
+<div id="contact" class="contact">
+    <div class="con_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="box" id="box">
+                        {{ form_start(form) }}
+                        <div class="d-flex flex-start w-100">
+                            <div class="form-outline w-100">
+
+                                {{form_row(form.contenur,{'attr':{'class':'form-control'}})}}
+                                {{form_row(form.type,{'attr':{'class':'form-control'}})}}
+
+                                <br>
+
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit"  class="send_btn">Réclamer</button>
+                        </div>
+                    </div>
+                        {{ form_end(form) }}
+                    </div>
+                </div>
+
+
+
+                </div>
+            </div>
+        </div>
+<style>
+    .box{
+        background: #ffd54a;
+        box-sizing: border-box;
+        overflow: hidden;
+        box-shadow: 0 20px 50px rgb(23, 32, 90);
+        border: 2px solid #2a3cad;
+        color: #fdd400;
+        padding: 20px;
+        color: #050d10;
+    }
+    .box:before{
+        width:100%;
+        height:100%;
+        background:#80CBC4;
+        transition:0.5s;
+        pointer-events: none;
+    }
+    .box:hover:before{
+        left:-50%;
+        transform: skewX(-5deg);
+    }
+    .box span{
+        width: 100%;
+        height: 100%;
+        display: block;
+        box-sizing: border-box;
+    }
+    .box span:before
+    {
+        width:100%;
+        height: 2px;
+        background: #50dfdb;
+        animation: animate 4s linear infinite;
+    }
+</style><!-- end contact section -->
+<!--  footer -->
+<footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="inror_box">
+                        <h3>My TT  </h3>
+                        <p>Recharge TT Cash
+                            Achat carte de recharge
+                            Forfait 3G / 4G
+                            Paiement facture</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="inror_box">
+                        <h3>MON ESPACE ENTREPRISE </h3>
+                        <p>Inscription
+                            Gestion de flottes
+                            Paiement des factures</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="inror_box">
+                        <h3>PRODUITS ET SERVICES </h3>
+                        <p>MobiDinar
+                            Prélévement
+                            Codes des services</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="inror_box">
+                        <h3>ASSISTANCE  </h3>
+                        <p>Mot de passe oublié ?
+                            Espaces TT
+                            Réclamation</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Tous droits réservés © 2022 - www.tunisietelecom.tn - Informations légales </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- end footer -->
+<!-- Javascript files-->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.0.0.min.js"></script>
+<!-- sidebar -->
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
+
